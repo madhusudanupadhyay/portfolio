@@ -31,11 +31,9 @@
 
 .social-icons>div>a {
     text-decoration: none;
-    color: black;
 }
 
 .prof-pic {
-    float: left;
     height: 250px;
     width: 250px;
     border-radius: 125px;
