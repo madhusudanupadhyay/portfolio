@@ -4,23 +4,99 @@
 <head>
     <meta charset="utf-8">
     <title>Madhusudan Upadhyay | Web Developer</title>
-    <link rel="stylesheet" href="./framework/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/f16735cf80.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <script type="text/javascript" src="./framework/js/jquery-3.2.0.slim.js"></script>
+    <script type="text/javascript" src="./framework/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./framework/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./framework/css/main.css">
 
 </head>
 
 <body>
+    <!-- Modal1 -->
+
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">First Python Project</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="./framework/image/Movies.png"> A movie application with server written in Python, using Tmdb API for fetching the recent movies and then displaying it on the web page.<br>
+                    <strong>Technologies Used:</strong>
+                    <ol>
+                        <li>Html5</li>
+                        <li>CSS</li>
+                        <li>javaScript</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Of Modal1-->
+
+
+    <!-- Modal2 -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Udacity Portfolio</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="./framework/image/udacity.png">
+                    <blockquote>
+                        <p>
+                            This is my first attempt at making a self-reflective portfolio using technologies like <strong>Bootstrap</strong>
+                        </p>
+                    </blockquote>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End of Modal2 for project2-->
+
+    <!-- Modal3 -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Unleash the DJ within</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="./framework/image/dj.jpg">
+                    <blockquote>
+                        <p>
+                            Using plain Vanilla Javascript and simple Html and CSS, this website is my attempt to practice JavaScript
+                        </p>
+                    </blockquote>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End of modal 3 for project3-->
+
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="./framework/image/site-logo.png" class="img-responsive img-rounded" alt="Site logo">
+                <img class="title-logo" src="./framework/image/site-logo.png" class="img-responsive img-rounded" alt="Site logo">
             </div>
             <div class="col-md-6 text-right text-uppercase">
-                <h1>Madhusudan Upadhyay</h1>
+                <h1 class="text-thin title-super">Madhusudan Upadhyay</h1>
                 <h4>Full Stack Web Ninja</h4>
             </div>
         </div>
@@ -64,44 +140,53 @@
         <br>
 
         <div class="row">
-            <div class="col-md-12">Featured Work</div>
+            <div class="col-md-12">
+                <h2 class="text-muted">Featured Work</h2>
+            </div>
         </div>
         <div class="row text-center">
             <div class="col-md-4">
-                <a href="https://madhusudanupadhyay.github.io/fsnd_movie_trailer_project/" class="link" target="_blank">
-                    <div class="card">
-                        <img src="./framework/image/Movies.png" alt="Avatar" class="img-responsive">
-                        <div>
+
+                <div class="card">
+                    <img src="./framework/image/Movies.png" alt="Avatar" class="img-responsive" data-toggle="modal" data-target="#project1">
+                    <div>
+                        <a href="https://madhusudanupadhyay.github.io/fsnd_movie_trailer_project/" style="text-decoration: none" class="link" target="_blank">
                             <h2><b>Movie Box</b></h2>
-                            <p>A movie server written in Python,rendering the upcoming movies using the Tmdb API</p>
-                        </div>
+                        </a>
+                        <p>A movie server written in Python,rendering the upcoming movies using the Tmdb API</p>
                     </div>
+                </div>
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="https://madhusudanupadhyay.github.io/portfolio/" class="link" target="_blank">
-                    <div class="card">
-                        <img src="./framework/image/udacity.png" alt="Avatar" class="img-responsive">
-                        <div>
+
+                <div class="card">
+                    <img src="./framework/image/udacity.png" alt="Avatar" class="img-responsive" data-toggle="modal" data-target="#project2">
+                    <div>
+                        <a href="https://madhusudanupadhyay.github.io/portfolio/" style="text-decoration: none" class="link" target="_blank">
                             <h2><b>Udacity Portfolio </b></h2>
-                            <p>A Self-Reflective Portfolio built using CSS/HTML/JS potraying responsive design</p>
-                        </div>
+                        </a>
+                        <p>A Self-Reflective Portfolio built using CSS/HTML/JS potraying responsive design</p>
                     </div>
+                </div>
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="https://madhusudanupadhyay.github.io/drumstick/" class="link" target="_blank">
-                    <div class="card">
-                        <img src="./framework/image/dj.jpg" alt="Avatar" class="img-responsive">
-                        <div>
+
+                <div class="card">
+                    <img src="./framework/image/dj.jpg" alt="Avatar" class="img-responsive" data-toggle="modal" data-target="#project3">
+                    <div>
+                        <a href="https://madhusudanupadhyay.github.io/drumstick/" style="text-decoration: none" class="link" target="_blank">
                             <h2><b>Drum Stick</b></h2>
-                            <p>Using pure Vanilla JavaScript, implemented EventListeners for Dj-Sounds</p>
-                        </div>
+                        </a>
+                        <p>Using pure Vanilla JavaScript, implemented EventListeners for Dj-Sounds</p>
                     </div>
+                </div>
                 </a>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
