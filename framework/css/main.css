@@ -1,7 +1,6 @@
 body {
     /* border: 1px solid red !important; */
     font-family: 'Lato', sans-serif;
-    color: #747706;
     font-weight: 300;
 }
 
@@ -43,7 +42,7 @@ body {
 }
 
 .social-icons {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 a {
