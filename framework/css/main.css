@@ -1,6 +1,6 @@
 * {
     /* border: 1px solid red !important; */
-    font-family: 'Arvo';
+    font-family: 'Lato';
 }
 
 * {
@@ -54,33 +54,6 @@ hr.style13 {
     box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
 
-.col-1 {
-    width: 8.33%;
-}
-
-.col-2 {
-    width: 16.66%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-3>img {
-    border-radius: 150px;
-    height: 30%
-}
-
-.col-4 {
-    width: 33.33%;
-}
-
-.col-4>img {
-    width: 50%;
-    border-radius: 200px;
-    margin-bottom: 36px;
-}
-
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -103,57 +76,6 @@ img {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
-
-/* Add some padding inside the card container */
-
-.container {
-    padding: 2px 16px;
-}
-
-.col-5 {
-    width: 20%;
-}
-
-.col-6 {
-    width: 50%;
-    text-align: right;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 50%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
-}
-
-
-/*
-@media only screen and (max-width:500px) {
-    .col-4 {
-        /*background-color: wheat;*/
-
-
-/*display: none;
-    }
-}*/
 
 @media only screen and (max-width:500px) {
     .col-4 {
